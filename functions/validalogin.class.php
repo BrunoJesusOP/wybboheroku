@@ -2,7 +2,7 @@
 // session_start inicia a sessão
 session_start();
 // as variáveis login e senha recebem os dados digitados na página anterior
-$login = $_POST['email'];
+$email = $_POST['email'];
 $senha = $_POST['senha'];
 // as próximas 3 linhas são responsáveis em se conectar com o bando de dados.
 $con = mysqli_connect("localhost", "root", "") or die
@@ -21,9 +21,9 @@ resultado ele redirecionará para a página site.php ou retornara  para a págin
 do formulário inicial para que se possa tentar novamente realizar o login */
 if(mysqli_num_rows ($result) > 0 )
 {
-$_SESSION['email'] = $login;
+$_SESSION['email'] = $email;
 $_SESSION['senha'] = $senha;
-header('location:site.php');
+header('location:');
 }
 else{
   unset ($_SESSION['email']);
