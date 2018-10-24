@@ -23,8 +23,8 @@
     <link href="css/styll.css" rel="stylesheet">
     <link rel="icon" href="img/wybbo.png" type="wybbo.png" />
     <link rel="shortcut icon" href="img/wybbo.png" type="wybbo.png" />
+    <title>Wybbo - Segurança</title>
   </head>
-
   <body>
   <?php
 if (isset($_POST['submit'])) {
