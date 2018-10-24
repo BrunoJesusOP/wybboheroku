@@ -45,6 +45,7 @@ if (isset($_POST['submit'])) {
   
   $controller->save($cadastro);
 }
+
  ?>
 <form action="index.php" method="post">
 <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
@@ -201,7 +202,11 @@ if (isset($_POST['submit'])) {
       </div>
     </section>
   </body>
-    <script src="./js/modal.js">
-    	
-    </script>
+  <?php  
+  if(isset($_GET["erro"])){
+  echo "<script>alert('Email ou senha invalidos..!')</script>";
+  }
+  ?>
+
+  <script src="./js/modal.js"> </script>
 </html>
