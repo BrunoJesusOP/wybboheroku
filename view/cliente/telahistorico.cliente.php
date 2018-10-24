@@ -3,6 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <link rel="icon" href="../../img/wybbo.png" type="wybbo.png" />
+    <link rel="shortcut icon" href="../../img/wybbo.png" type="wybbo.png" />
+</head>
+<head>
 <?php 
 /* esse bloco de código em php verifica se existe a sessão, pois o usuário pode
  simplesmente não fazer o login e digitar na barra de endereço do seu navegador 
@@ -29,7 +33,7 @@ $logado = $_SESSION['email'];
   <tr>
     <td height="90" colspan="2" bgcolor="#CCCCCC">SISTEM WEB TESTE
     <?php
-  echo" Bem vindo $logado";
+  echo" Bem-Vindo $logado";
   ?>
     </td>
   </tr>
