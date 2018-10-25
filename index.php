@@ -23,6 +23,7 @@
     <link href="css/styll.css" rel="stylesheet">
     <link rel="icon" href="img/wybbo.png" type="wybbo.png" />
     <link rel="shortcut icon" href="img/wybbo.png" type="wybbo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/stylo.css">
     <title>Wybbo - Segurança</title>
   </head>
   <body>
@@ -109,7 +110,7 @@ if (isset($_POST['submit'])) {
       <div class="container">
         <div class="row">
           <div class="col-xl-12 mx-auto">
-            <h1 class="mb-5">Seu anjo da guarda tecnológico..</h1>
+            <h1 class="mb-5"></h1>
           </div>
 
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">

@@ -4,7 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <link rel="icon" href="../../img/wybbo.png" type="wybbo.png" />
-    <link rel="shortcut icon" href="../../img/wybbo.png" type="wybbo.png" />
+  <link rel="shortcut icon" href="../../img/wybbo.png" type="wybbo.png" />
+  <link rel="stylesheet" type="text/css" href="../../css/stylo.css">
 </head>
 <head>
 <?php 
@@ -24,26 +25,45 @@ if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == tru
  
 $logado = $_SESSION['email'];
 ?>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>HISTÓRICO DE EMERGENCIAS</title>
-</head>
- 
-<body>
-<table width="800" height="748" border="1">
-  <tr>
-    <td height="90" colspan="2" bgcolor="#CCCCCC">SISTEM WEB TESTE
-    <?php
+ <?php
   echo" Bem-Vindo $logado";
   ?>
-    </td>
-  </tr>
-  <tr>
-    <td width="103" height="410" bgcolor="#CCCCCC">MENU AQUI</td>
-    <td width="546">CONTEUDO E ICONES AQUI</td>
-  </tr>
-  <tr>
-    <td colspan="2" bgcolor="#000000"> </td>
-  </tr>
-</table>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Histórico de Ocorrências</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container" id="tabela">
+       <table>
+            <thead>
+                <tr>
+                    <th>Placa</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GEF5570</td>
+                    <td>Bruno Jesus Oliveira Pinho</td>
+                    <td>19995449108</td>
+                    <td>24/10/2018</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>       
+    </div>
 </body>
 </html>
+    
